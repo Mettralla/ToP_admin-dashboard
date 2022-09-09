@@ -254,7 +254,8 @@ button {
 }
 
 .announcements {
-    margin: 1em;
+    margin: 1vw;
+    padding-right: 1vw;
     display: grid;
     grid-area: 1 / 2 / 2 / 3;
     grid-template-rows: 0.5fr 5fr;
@@ -296,11 +297,12 @@ button {
 }
 
 .trending {
-    margin: 1em;
+    margin: 1vw;
+    padding-right: 1vw;
     display: grid;
     grid-area: 2 / 2 / 3 / 3;
     grid-template-rows: 0.5fr 5fr;
-    gap: 4px;
+    gap: 2px;
 }
 
 .trend_container {
@@ -309,7 +311,39 @@ button {
     grid-template-rows: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
-    gap: 0.5em;
     width: 20vw;
+    box-shadow: 1px 1px 2px 1px rgb(164, 164, 164);
+    position: relative;
     border-radius: 0.7em;
 }
+
+.users {
+    display: grid;
+    align-self: center;
+}
+
+.user_data {
+    display: grid;
+    align-self: center;
+    gap: 0.2vw;
+}
+
+.username {
+    font-size: 13px;
+}
+
+.description {
+    font-size: 11px;
+    font-weight: light;
+    color: gray;
+}
+
+.user_profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.trend_avatar {
+    height: 5vh;
+}
+

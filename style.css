@@ -194,6 +194,10 @@ button {
     grid-template-rows: repeat(2, 2fr);
 }
 
+.section_name {
+    font-weight: 500;
+}
+
 .your_projects {
     margin: 1em;
     display: grid;
@@ -206,7 +210,7 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 15px;
+    gap: 14px;
 }
 
 .card {
@@ -215,9 +219,35 @@ button {
     width: 28vw;
     border-radius: 0.7em;
     align-items: center;
-    justify-items: center;
+    box-shadow: 1px 1px 1px 1px rgb(164, 164, 164);
+    position: relative;
+    grid-template-columns: 0.5fr 12fr;
+    grid-template-rows: 2fr 1fr;
+    border-left-color: orange;
+    border-left-style: solid;
+    border-left-width: 1.5vw;
 }
 
+.projects {
+    display: grid;
+    grid-area: 1 / 2 / 2 / 3;
+    justify-self: start;
+
+}
+
+.title {
+    font-weight: 500;
+}
+
+
+.project_icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: end;
+    margin-right: 3vw;
+    gap: 2vw;
+    grid-area: 2 / 2 / 3 / 3;
+}
 .announcements {
     margin: 1em;
     display: grid;
